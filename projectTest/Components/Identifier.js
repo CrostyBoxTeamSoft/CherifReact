@@ -14,7 +14,7 @@ const peps = {
        return `${peps.pseudo} ${peps.id} ${peps.password} ${peps.email}`
      },
      set fullInfo(value){
-       const parts = value.split('');
+       const parts = value.split(' ');
        this.pseudo=parts[0];
        this.id=parts[1];
        this.password=parts[2];
