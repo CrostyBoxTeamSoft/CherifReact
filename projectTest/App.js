@@ -5,8 +5,10 @@ import React  from 'react';
 //import AddPet from './Components/AddPet';
 //import Felix from './Components/Felix';
 //import FelixProg from './Components/FelixProg';
-import Compte from './Components/Compte';
+//import Compte from './Components/Compte';
 //import Resume from './Components/Resume';
+//import User from './Components/User';
+import Identifier from './Components/Identifier';
 
 import { StyleSheet, Text, View,Image } from 'react-native';
 //import {ProgressBar} from'react-native-progress-bar';
@@ -18,8 +20,10 @@ export default function App() {
      //<AddPet/>
      //<Felix/>
      //<FelixProg/>
-     <Compte/>
+     //<Compte/>
      //<Resume/>
+     //<User/>
+     <Identifier/>
   );
 }
 
