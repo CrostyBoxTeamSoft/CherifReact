@@ -8,14 +8,15 @@ import React  from 'react';
 //import Compte from './Components/Compte';
 //import Resume from './Components/Resume';
 //import User from './Components/User';
-import Identifier from './Components/Identifier';
+//import Identifier from './Components/Identifier';
+import FindUser from './Components/FindUser';
 
-import { StyleSheet, Text, View,Image } from 'react-native';
+import { StyleSheet, Text, View,Image,FlatList } from 'react-native';
 //import {ProgressBar} from'react-native-progress-bar';
 
 export default function App() {
   return (
-    //  <Search/>
+     //<Search/>
      //<Home/>
      //<AddPet/>
      //<Felix/>
@@ -23,17 +24,7 @@ export default function App() {
      //<Compte/>
      //<Resume/>
      //<User/>
-     <Identifier/>
+     //<Identifier/>
+     <FindUser/>
   );
 }
-
-/*class App extends Component {
-  render() {
-    return(
-      <div className="App">
-      <Search/>
-      //<TestForm/>
-      </div>
-    )
-  }
-}*/

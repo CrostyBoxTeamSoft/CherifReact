@@ -1,9 +1,8 @@
-//import React from 'react'
+import React from 'react'
 
-//import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
-
-//class Identifier {
-
+{/*import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'}*/}
+{/*class Identifier {*/}
+class Identifier {
 const peps = {
 		 pseudo :'name',
 		 id : 'number',
@@ -24,3 +23,5 @@ const peps = {
   peps.fullInfo='simran 12 mikymiky kunye@gmail.com';
 
   console.log(peps);
+}
+	export default Identifier
