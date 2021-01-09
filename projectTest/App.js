@@ -9,7 +9,8 @@ import React  from 'react';
 //import Resume from './Components/Resume';
 //import User from './Components/User';
 //import Identifier from './Components/Identifier';
-import FindUser from './Components/FindUser';
+//import FindUser from './Components/FindUser';
+import TestFetch from './Components/TestFetch';
 
 import { StyleSheet, Text, View,Image,FlatList } from 'react-native';
 //import {ProgressBar} from'react-native-progress-bar';
@@ -25,6 +26,7 @@ export default function App() {
      //<Resume/>
      //<User/>
      //<Identifier/>
-     <FindUser/>
+     //<FindUser/>
+     <TestFetch/>
   );
 }

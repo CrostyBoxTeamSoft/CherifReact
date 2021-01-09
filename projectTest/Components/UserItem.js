@@ -2,27 +2,31 @@
 
 import React from 'react'
 import { StyleSheet, View, Text,Image } from 'react-native'
+import Infos from './DataBase/Infos.json'
+
 
 class UserItem extends React.Component {
   render() {
-    const user = this.props.user
+
+    //const user = this.props.user
+    const Infos = require('./DataBase/Infos.json');
      return (
        <View style={styles.main_container}>
          <Image
            style={styles.image}
-          source={require('./apppics/Unknown.png')}
+          source={require('./apppics/simran.jpg')}
          />
          <View style={styles.content_container}>
            <View style={styles.header_container}>
-             <Text style={styles.title_text}>{user.pseudo}</Text>
-             <Text style={styles.vote_text}>{user.idUser}</Text>
+             <Text style={styles.title_text}>{Infos.pseudo}</Text>
+             <Text style={styles.vote_text}>{Infos.idUser}</Text>
            </View>
            <View style={styles.description_container}>
-             <Text style={styles.description_text} numberOfLines={6}>{user.overview}</Text>
+             <Text style={styles.description_text} numberOfLines={6}>{Infos.overview}</Text>
              {/* La propriété numberOfLines permet de couper un texte si celui-ci est trop long, il suffit de définir un nombre maximum de ligne */}
            </View>
            <View style={styles.date_container}>
-             <Text style={styles.date_text}>Registered on {user.registDate}</Text>
+             <Text style={styles.date_text}>Registered on {Infos.registDate}</Text>
            </View>
          </View>
        </View>

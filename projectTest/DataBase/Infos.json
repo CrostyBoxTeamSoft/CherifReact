@@ -1,12 +1,10 @@
-//DataBase/UserData.js
-export default data =[
+//DataBase/Infos.json
 {
         "idUser": 1,
         "pseudo": "Poussinette",
-        "overview": "I love pets and mangas !",
+        "overview": "I love pets and mangas!YEAH !!",
         "email": "allo@mail.com",
         "animals": [],
         "profilePic": "simran.jpg",
         "registDate": "04/06/2020"
 }
-]

@@ -1,7 +1,7 @@
 // Components/Search.js
 import React from 'react'
 //import { reduxForm, Field } from "redux-form";
-import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
+import { Text,StyleSheet, View, TextInput, Button,Image,FlatList } from 'react-native'
 //import { reduxForm, Field } from "redux-form";
 
 class Search extends React.Component {

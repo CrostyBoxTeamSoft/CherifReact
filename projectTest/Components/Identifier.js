@@ -2,7 +2,8 @@ import React from 'react'
 
 {/*import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'}*/}
 {/*class Identifier {*/}
-class Identifier {
+class Identifier extends React.Component {
+
 const peps = {
 		 pseudo :'name',
 		 id : 'number',
