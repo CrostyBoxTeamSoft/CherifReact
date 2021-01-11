@@ -1,7 +1,7 @@
 // Components/Search.js
 import React from 'react'
 //import { reduxForm, Field } from "redux-form";
-import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
+import { Text,StyleSheet, View, TextInput, Button,Image,TouchableOpacity } from 'react-native'
 
 import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
 //import { reduxForm, Field } from "redux-form";
@@ -22,13 +22,14 @@ class Felix extends React.Component {
           </View>
 
           <View style={styles.iconlist}>
-          <Foundation name="list" size={24} color="green" style={{ paddingLeft:40}}/>
+          <Foundation onPress={()=> this.props.navigation.navigate("Options")} name="list" size={24} color="black" style={{ paddingLeft:40}}/>
           </View>
 
        </View>
 
         <View style={styles.containrow}>
            <Image
+
             style={styles.logo}
             source={require('./apppics/felix.png')}
            />
@@ -47,16 +48,16 @@ class Felix extends React.Component {
              style={styles.reservoir}
              source={require('./apppics/reservoir.png')}
            />
-           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:55}}> réservoir </Text>
+           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:45}}> Réservoir </Text>
         </View>
 
-        <View style={styles.containrow}>
+        <TouchableOpacity onPress={()=> this.props.navigation.navigate("Planning")} style={styles.containrow}>
            <Image
              style={styles.planning}
              source={require('./apppics/planningc.png')}
            />
-           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:55}}> Planning </Text>
-        </View>
+           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:45}}> Planning </Text>
+        </TouchableOpacity>
 
 
 

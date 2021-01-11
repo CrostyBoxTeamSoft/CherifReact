@@ -1,7 +1,7 @@
 // Components/Search.js
 import React from 'react'
 //import { reduxForm, Field } from "redux-form";
-import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
+import { Text,StyleSheet, View, TextInput, Button,Image,TouchableOpacity } from 'react-native'
 
 import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
 //import { reduxForm, Field } from "redux-form";
@@ -21,8 +21,8 @@ class Home extends React.Component {
           <AntDesign name="wifi" size={24} color="black"  />
           </View>
 
-          <View style={styles.iconlist}>
-          <Foundation name="list" size={24} color="green" style={{ paddingLeft:40}}/>
+          <View  style={styles.iconlist}>
+          <Foundation onPress={()=> this.props.navigation.navigate("Options")} name="list" size={24} color="black" style={{ paddingLeft:40}}/>
           </View>
 
        </View>
@@ -39,7 +39,7 @@ class Home extends React.Component {
              style={styles.gamelle}
              source={require('./apppics/gamelle.jpg')}
            />
-           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:25}}> Gamelle </Text>
+           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:25}}>Gamelle </Text>
         </View>
 
         <View style={styles.containrow}>
@@ -47,7 +47,7 @@ class Home extends React.Component {
              style={styles.reservoir}
              source={require('./apppics/reservoir.png')}
            />
-           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:55}}> réservoir </Text>
+           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:45}}>Réservoir</Text>
         </View>
 
         <View style={styles.containrow}>
@@ -55,7 +55,7 @@ class Home extends React.Component {
              style={styles.planning}
              source={require('./apppics/planning.png')}
            />
-           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:55}}> Planning </Text>
+           <Text style={{fontWeight: 'bold',borderColor:'#000',borderWidth:0,marginBottom:5,height:25, width:120, paddingLeft:45}}>Planning </Text>
         </View>
 
 
