@@ -34,11 +34,11 @@ class Compte extends React.Component {
             <View style={styles.containrow}>
 
               <View style={styles.iconwifi}>
-              <AntDesign name="wifi" size={24} color="black"  />
+
               </View>
 
               <View style={styles.iconlist}>
-              <Foundation name="list" size={24} color="green" style={{ paddingLeft:40}}/>
+
               </View>
 
            </View>
@@ -122,7 +122,7 @@ class Compte extends React.Component {
 
       icon:{
       position: 'absolute',
-      top: 200,
+      top: 140,
       right: 130
       },
 

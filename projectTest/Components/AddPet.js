@@ -118,14 +118,14 @@ class AddPet extends React.Component {
         <View style={styles.btnBack}>
           <Button
           title="Back"
-          onPress={() => { console.log("back")}}
+            onPress={() => this.props.navigation.navigate("Animal3")}
           />
         </View>
 
         <View style={styles.btnSave}>
           <Button
           title="Save"
-          onPress={() => this._handlePress()}
+          onPress={() => this.props.navigation.navigate("Animal2")}
           />
         </View>
 
