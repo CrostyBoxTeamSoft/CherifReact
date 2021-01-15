@@ -10,6 +10,8 @@ import React  from 'react';
 //import User from './Components/User';
 //import Identifier from './Components/Identifier';
 //import FindUser from './Components/FindUser';
+
+// c'est la classe qui permet de tester toutes les autres classes 
 import TestFetch from './Components/TestFetch';
 
 import { StyleSheet, Text, View,Image,FlatList } from 'react-native';

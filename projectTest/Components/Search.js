@@ -3,7 +3,7 @@ import React from 'react'
 //import { reduxForm, Field } from "redux-form";
 import { Text,StyleSheet, View, TextInput, Button,Image,FlatList } from 'react-native'
 //import { reduxForm, Field } from "redux-form";
-
+// cette classe était un essai des différents compnents à utiliser pour le la classe home (page d'accueil )
 class Search extends React.Component {
 
   constructor(props){

@@ -3,23 +3,23 @@ import React from 'react'
 import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
 
 //import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
-
+// cette classe devrait permettre d'afficher les données de l'utilisateur , c'est à dire ces informations de connexion
 class User extends React.Component {
 
 constructor(props){
   super(props)
 
   this.state = {
-    pseudo: '',
-    id: '',
-    pwd: '',
-    email: '',
+    pseudo: '', // son pseudo
+    id: '', // son id
+    pwd: '', // son mot de passe de facon privée
+    email: '', // son adresse mail
 
 
 
   }
 }
-
+// affichage des différents infos sur la console pour réaliser des tests
 _handlePress() {
    console.log(this.state.pseudo);
    console.log(this.state.id);
@@ -28,7 +28,7 @@ _handlePress() {
 
 }
 
-
+// en dessous on effectue le même principe que les autres d=classes pour la mise en forme et l'ajout des components 
     render(){
       return (
 

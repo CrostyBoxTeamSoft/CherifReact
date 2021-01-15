@@ -1,9 +1,8 @@
-// Components/UserItem.js
-
 import React from 'react'
 import { StyleSheet, View, Text,Image, Button } from 'react-native'
-import Utility from './Components/Utility'
+//import StaticClass from './StaticClass';
 
+const user = require('../DataBase/Infos.json')
 
 class TestFetch extends React.Component {
 
@@ -25,7 +24,32 @@ class TestFetch extends React.Component {
 
   testStatic()
   {
-    Utility.getIdUser();
+    //var staticVar = require('./')
+    //StaticClass.getIdUser();
+    console.log(user.pseudo);
+  }
+
+  changePseudo()
+  {
+    user.pseudo="new Pseudo";
+  }
+
+  getPoids()
+  {
+    console.log("GET poids");
+    fetch('http://192.168.43.151/')
+    .then
+    (
+      (response) => response.json()
+    )
+    .then
+    (
+      function(jsonText)
+      {
+        console.log("Poids = ");
+        console.log(jsonText);
+      }
+    );
   }
 
   render() {
@@ -35,8 +59,16 @@ class TestFetch extends React.Component {
      return (
        <View style={styles.test}>
          <Button
-         title="Get one user"
+         title="Get pseudo"
          onPress={() => { this.testStatic()}}
+         />
+         <Button
+         title="change pseudo"
+         onPress={() => { this.changePseudo()}}
+         />
+         <Button
+         title="Get poids"
+         onPress={() => { this.getPoids()}}
          />
        </View>
      )

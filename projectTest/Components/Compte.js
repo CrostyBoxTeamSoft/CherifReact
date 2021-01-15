@@ -6,38 +6,40 @@ import { Text,StyleSheet, View, TextInput, Button,Image,AppRegistry } from 'reac
 import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-
+// Cpage de création de comptede l'utilisateur
+//on définit les différentes variable et la mise en forma des différents boutons
+//c'est le meme principe que sur addpet
 
 class Compte extends React.Component {
 
-      constructor(props){
+      constructor(props){ // ce constructeur permet de créer les variables ID et password de l'utilisateur
         super(props)
 
         this.state = {
-          ID: '',
-          password: '',
+          ID: '', //identifiant de l'utilisateur
+          password: '',// le mot de passe de l'utilisateur
         }
       }
 
       _handlePress() {
-         console.log(this.state.ID);
-         console.log(this.state.password);
-         console.log(this.state.confirmpwd);
-         console.log(this.state.email);
+         console.log(this.state.ID); // affichage de l'ID au niveau de la console
+         console.log(this.state.password); // affichage de l'ID au niveau de la console
+         console.log(this.state.confirmpwd); //affichage du mot de passe  au niveau de la console
+         console.log(this.state.email);// affichage de l'e mail au niveau de la console
       }
 
 
         render(){
           return (
-            <View style={styles.container}>
+            <View style={styles.container}> // on crée notre vue principale
 
             <View style={styles.containrow}>
 
-              <View style={styles.iconwifi}>
+              <View style={styles.iconwifi}>  // pour l'aafichage de l'icone wifi de l'application
               <AntDesign name="wifi" size={24} color="black"  />
               </View>
 
-              <View style={styles.iconlist}>
+              <View style={styles.iconlist}> // pour l'aafichage de l'icone liste de l'application
               <Foundation name="list" size={24} color="green" style={{ paddingLeft:40}}/>
               </View>
 
