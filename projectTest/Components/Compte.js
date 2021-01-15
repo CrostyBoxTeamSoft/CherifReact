@@ -7,7 +7,7 @@ import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/ve
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-
+// cette classe permet d'afficher les informations du compte de l'utilisateur
 class Compte extends React.Component {
 
       constructor(props){
@@ -18,7 +18,7 @@ class Compte extends React.Component {
           password: '',
         }
       }
-
+// affichage sur la cosole des données
       _handlePress() {
          console.log(this.state.ID);
          console.log(this.state.password);
@@ -26,7 +26,7 @@ class Compte extends React.Component {
          console.log(this.state.email);
       }
 
-
+// configurations des components  avec l'application des styles
         render(){
           return (
             <View style={styles.container}>

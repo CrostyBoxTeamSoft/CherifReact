@@ -5,11 +5,13 @@ import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
 
 import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
 
+// cette classe permet d'ajouter un animal dans l'appli avec ses informations
 class AddPet extends React.Component {
+
 
   constructor(props){
     super(props)
-
+// ci dessous on a les attributs cocernant l'animal et la machine associée
     this.state = {
       Machine: '',
       Wifi: '',
@@ -22,7 +24,7 @@ class AddPet extends React.Component {
 
     }
   }
-
+// affichage sur la cosole des données
   _handlePress() {
      console.log(this.state.Machine);
      console.log(this.state.Wifi);
@@ -34,7 +36,7 @@ class AddPet extends React.Component {
      console.log(this.state.Weight);
   }
 
-
+// configurations des components  avec l'application des styles
     render(){
       return (
         <View style={styles.container}>
@@ -133,7 +135,7 @@ class AddPet extends React.Component {
       )
     }
 }
-
+// défintion des différents styles chaque vue 
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -5,7 +5,7 @@ import { Text,StyleSheet, View, TextInput, Button,Image,TouchableOpacity } from 
 
 import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
 //import { reduxForm, Field } from "redux-form";
-
+// c'est la page d'accueil de l'application
 class Home extends React.Component {
 
 
@@ -13,7 +13,7 @@ class Home extends React.Component {
     return (
 
 
-
+//configuration des components 
       <View style={styles.container}>
         <View style={styles.containrow}>
 

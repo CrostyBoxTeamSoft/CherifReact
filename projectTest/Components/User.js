@@ -3,7 +3,7 @@ import React from 'react'
 import { Text,StyleSheet, View, TextInput, Button,Image } from 'react-native'
 
 //import {FontAwesome,AntDesign,SimpleLineIcons,Feather,Foundation} from '@expo/vector-icons';
-
+// affiche les infos de l'utilisateur
 class User extends React.Component {
 
 constructor(props){
